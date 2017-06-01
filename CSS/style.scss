@@ -1,0 +1,169 @@
+@import "variables";
+
+/*Så er der ingen uønsket margin*/
+
+body,
+h1,
+h2,
+p,
+nav ul,
+nav li,
+div ul,
+div li {
+    margin: $marginnone;
+    padding: $marginnone;
+}
+
+
+/*Min Wrapper*/
+
+.wrapper {
+    margin: 0 auto;
+    background-color: goldenrod;
+}
+
+
+/*Header og det billede der i den*/
+
+header {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        width: $standart;
+        max-width: 100%;
+    }
+}
+
+
+/*Min menu class hvor min nav ligger i*/
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    nav {
+        background-color: dodgerblue;
+        height: 42px;
+        width: $standart;
+        padding-top: 18px;
+        ul {
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            padding-right: 18px;
+            &:hover {
+                color: yellow;
+            }
+        }
+    }
+}
+
+
+/*Min Main*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*Min post class hvor de forskellige articles befinder sig*/
+
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    article {
+        width: 975px;
+        background-color: white;
+        text-align: center;
+        height: 760px;
+    }
+    img {
+        width: 833px;
+        max-width: 100%;
+        height: 500px;
+        padding-top: 20px;
+    }
+    h2 {
+        float: left;
+        position: absolute;
+        padding-left: 3.6%;
+    }
+    p {
+        text-align: left;
+        padding-left: 7.1%;
+        width: 700px;
+    }
+}
+
+
+/*Dato der viser hvornår billedet er uploadet*/
+
+.time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5px;
+    p {
+        text-align: center;
+        padding-top: 10px;
+        width: 68px;
+        background-color: #FF8C00;
+        height: 30px;
+        padding-right: 74px;
+        font-weight: bold;
+    }
+}
+
+
+/*Aside med log ind system*/
+
+aside {
+    width: 200px;
+    padding-left: 16px;
+    align-self: center;
+    h2 {
+        background-color: dodgerblue;
+        height: 37px;
+        padding-left: 13px;
+        padding-top: 5px;
+        border: black solid 1px;
+        border-bottom: none;
+    }
+    form {
+        background-color: white;
+        border: black solid 1px;
+        padding-left: 13px;
+        padding-top: 5px;
+        input {
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    }
+}
+
+
+/*Min Footer*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 10%;
+    p {
+        font-size: 14pt;
+    }
+}
