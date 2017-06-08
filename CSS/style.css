@@ -12,141 +12,178 @@ div li {
   margin: 0;
   padding: 0; }
 
-/*Min Wrapper*/
-/* line 20, C:/xampp/htdocs/CMS/CSS/style.scss */
-.wrapper {
-  margin: 0 auto;
+/* line 17, C:/xampp/htdocs/CMS/CSS/style.scss */
+body {
   background-color: goldenrod; }
 
+/*Min Wrapper*/
+/* line 24, C:/xampp/htdocs/CMS/CSS/style.scss */
+.wrapper {
+  margin: 0 auto;
+  background-color: goldenrod;
+  height: 974px; }
+
 /*Header og det billede der i den*/
-/* line 28, C:/xampp/htdocs/CMS/CSS/style.scss */
+/* line 33, C:/xampp/htdocs/CMS/CSS/style.scss */
 header {
   height: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  /* line 33, C:/xampp/htdocs/CMS/CSS/style.scss */
+  /* line 38, C:/xampp/htdocs/CMS/CSS/style.scss */
   header img {
     width: 1191px;
     max-width: 100%; }
 
 /*Min menu class hvor min nav ligger i*/
-/* line 42, C:/xampp/htdocs/CMS/CSS/style.scss */
+/* line 47, C:/xampp/htdocs/CMS/CSS/style.scss */
 .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  /* line 46, C:/xampp/htdocs/CMS/CSS/style.scss */
+  /* line 51, C:/xampp/htdocs/CMS/CSS/style.scss */
   .menu nav {
     background-color: dodgerblue;
     height: 42px;
     width: 1191px;
     padding-top: 18px; }
-    /* line 51, C:/xampp/htdocs/CMS/CSS/style.scss */
+    /* line 56, C:/xampp/htdocs/CMS/CSS/style.scss */
     .menu nav ul {
       text-align: center; }
-    /* line 54, C:/xampp/htdocs/CMS/CSS/style.scss */
+    /* line 59, C:/xampp/htdocs/CMS/CSS/style.scss */
     .menu nav li {
       display: inline-block;
       list-style: none; }
-    /* line 58, C:/xampp/htdocs/CMS/CSS/style.scss */
+    /* line 63, C:/xampp/htdocs/CMS/CSS/style.scss */
     .menu nav a {
       text-decoration: none;
       text-transform: uppercase;
       color: #000;
       padding-right: 18px; }
-      /* line 63, C:/xampp/htdocs/CMS/CSS/style.scss */
+      /* line 68, C:/xampp/htdocs/CMS/CSS/style.scss */
       .menu nav a:hover {
         color: yellow; }
 
 /*Min Main*/
-/* line 73, C:/xampp/htdocs/CMS/CSS/style.scss */
+/* line 78, C:/xampp/htdocs/CMS/CSS/style.scss */
 main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: space-around;
+  /*Aside med log ind system*/ }
+  /* line 82, C:/xampp/htdocs/CMS/CSS/style.scss */
+  main a {
+    padding-top: 10px;
+    height: 20px; }
+    /* line 85, C:/xampp/htdocs/CMS/CSS/style.scss */
+    main a input {
+      border-radius: 28px;
+      height: 29px; }
+      /* line 88, C:/xampp/htdocs/CMS/CSS/style.scss */
+      main a input:hover {
+        background-color: dodgerblue; }
+  /* line 93, C:/xampp/htdocs/CMS/CSS/style.scss */
+  main section {
+    padding-top: 10px; }
+  /* line 97, C:/xampp/htdocs/CMS/CSS/style.scss */
+  main aside {
+    width: 200px; }
+    /* line 99, C:/xampp/htdocs/CMS/CSS/style.scss */
+    main aside h2 {
+      background-color: dodgerblue;
+      height: 37px;
+      padding-left: 13px;
+      padding-top: 5px;
+      border: black solid 1px;
+      border-bottom: none; }
+    /* line 107, C:/xampp/htdocs/CMS/CSS/style.scss */
+    main aside form {
+      background-color: white;
+      border: black solid 1px;
+      padding-left: 13px;
+      padding-top: 5px; }
+      /* line 112, C:/xampp/htdocs/CMS/CSS/style.scss */
+      main aside form input {
+        margin-bottom: 5px;
+        margin-top: 5px; }
 
 /*Min post class hvor de forskellige articles befinder sig*/
-/* line 82, C:/xampp/htdocs/CMS/CSS/style.scss */
+/* line 123, C:/xampp/htdocs/CMS/CSS/style.scss */
 .post {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 2%;
-  padding-bottom: 2%; }
-  /* line 88, C:/xampp/htdocs/CMS/CSS/style.scss */
+  padding-bottom: 2%;
+  /*Min form til at indsætte artikler*/ }
+  /* line 129, C:/xampp/htdocs/CMS/CSS/style.scss */
   .post article {
-    width: 975px;
+    width: 1191px;
     background-color: white;
     text-align: center;
-    height: 760px; }
-  /* line 94, C:/xampp/htdocs/CMS/CSS/style.scss */
+    height: 760px;
+    max-width: 100%; }
+  /* line 136, C:/xampp/htdocs/CMS/CSS/style.scss */
   .post img {
     width: 833px;
     max-width: 100%;
     height: 500px;
     padding-top: 20px; }
-  /* line 100, C:/xampp/htdocs/CMS/CSS/style.scss */
+  /* line 142, C:/xampp/htdocs/CMS/CSS/style.scss */
   .post h2 {
     float: left;
     position: absolute;
-    padding-left: 3.6%; }
-  /* line 105, C:/xampp/htdocs/CMS/CSS/style.scss */
+    padding-left: 9.3%; }
+  /* line 147, C:/xampp/htdocs/CMS/CSS/style.scss */
   .post p {
-    text-align: left;
-    padding-left: 7.1%;
     width: 700px; }
+  /* line 151, C:/xampp/htdocs/CMS/CSS/style.scss */
+  .post .form {
+    height: 50px;
+    text-align: inherit; }
+    /* line 154, C:/xampp/htdocs/CMS/CSS/style.scss */
+    .post .form form {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      height: 400px; }
+    /* line 162, C:/xampp/htdocs/CMS/CSS/style.scss */
+    .post .form .form-group {
+      padding: 20px; }
+      /* line 164, C:/xampp/htdocs/CMS/CSS/style.scss */
+      .post .form .form-group label {
+        font-weight: bold; }
+      /* line 167, C:/xampp/htdocs/CMS/CSS/style.scss */
+      .post .form .form-group input {
+        width: 184px; }
 
 /*Dato der viser hvornår billedet er uploadet*/
-/* line 115, C:/xampp/htdocs/CMS/CSS/style.scss */
+/* line 177, C:/xampp/htdocs/CMS/CSS/style.scss */
 .time {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 5px; }
-  /* line 120, C:/xampp/htdocs/CMS/CSS/style.scss */
+  /* line 182, C:/xampp/htdocs/CMS/CSS/style.scss */
   .time p {
     text-align: center;
     padding-top: 10px;
-    width: 68px;
+    width: 76px;
     background-color: #FF8C00;
     height: 30px;
-    padding-right: 74px;
-    font-weight: bold; }
-
-/*Aside med log ind system*/
-/* line 134, C:/xampp/htdocs/CMS/CSS/style.scss */
-aside {
-  width: 200px;
-  padding-left: 16px;
-  align-self: center; }
-  /* line 138, C:/xampp/htdocs/CMS/CSS/style.scss */
-  aside h2 {
-    background-color: dodgerblue;
-    height: 37px;
-    padding-left: 13px;
-    padding-top: 5px;
-    border: black solid 1px;
-    border-bottom: none; }
-  /* line 146, C:/xampp/htdocs/CMS/CSS/style.scss */
-  aside form {
-    background-color: white;
-    border: black solid 1px;
-    padding-left: 13px;
-    padding-top: 5px; }
-    /* line 151, C:/xampp/htdocs/CMS/CSS/style.scss */
-    aside form input {
-      margin-bottom: 5px;
-      margin-top: 5px; }
+    padding-right: 60px;
+    font-weight: bold;
+    padding-left: 60px; }
 
 /*Min Footer*/
-/* line 161, C:/xampp/htdocs/CMS/CSS/style.scss */
+/* line 197, C:/xampp/htdocs/CMS/CSS/style.scss */
 footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding-right: 10%; }
-  /* line 166, C:/xampp/htdocs/CMS/CSS/style.scss */
+  justify-content: center; }
+  /* line 201, C:/xampp/htdocs/CMS/CSS/style.scss */
   footer p {
     font-size: 14pt; }
 

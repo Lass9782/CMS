@@ -14,12 +14,17 @@ div li {
     padding: $marginnone;
 }
 
+body {
+    background-color: goldenrod;
+}
+
 
 /*Min Wrapper*/
 
 .wrapper {
     margin: 0 auto;
     background-color: goldenrod;
+    height: 974px;
 }
 
 
@@ -73,7 +78,43 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    a {
+        padding-top: 10px;
+        height: 20px;
+        input {
+            border-radius: 28px;
+            height: 29px;
+            &:hover {
+                background-color: dodgerblue;
+            }
+        }
+    }
+    section {
+        padding-top: 10px;
+    }
+    /*Aside med log ind system*/
+    aside {
+        width: 200px;
+        h2 {
+            background-color: dodgerblue;
+            height: 37px;
+            padding-left: 13px;
+            padding-top: 5px;
+            border: black solid 1px;
+            border-bottom: none;
+        }
+        form {
+            background-color: white;
+            border: black solid 1px;
+            padding-left: 13px;
+            padding-top: 5px;
+            input {
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+        }
+    }
 }
 
 
@@ -86,10 +127,11 @@ main {
     padding-top: 2%;
     padding-bottom: 2%;
     article {
-        width: 975px;
+        width: $standart;
         background-color: white;
         text-align: center;
         height: 760px;
+        max-width: 100%;
     }
     img {
         width: 833px;
@@ -100,12 +142,32 @@ main {
     h2 {
         float: left;
         position: absolute;
-        padding-left: 3.6%;
+        padding-left: 9.3%;
     }
     p {
-        text-align: left;
-        padding-left: 7.1%;
         width: 700px;
+    }
+    /*Min form til at indsætte artikler*/
+    .form {
+        height: 50px;
+        text-align: inherit;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            height: 400px;
+        }
+        .form-group {
+            padding: 20px;
+            label {
+                font-weight: bold;
+            }
+            input {
+                width: 184px;
+            }
+        }
     }
 }
 
@@ -120,38 +182,12 @@ main {
     p {
         text-align: center;
         padding-top: 10px;
-        width: 68px;
+        width: 76px;
         background-color: #FF8C00;
         height: 30px;
-        padding-right: 74px;
+        padding-right: 60px;
         font-weight: bold;
-    }
-}
-
-
-/*Aside med log ind system*/
-
-aside {
-    width: 200px;
-    padding-left: 16px;
-    align-self: center;
-    h2 {
-        background-color: dodgerblue;
-        height: 37px;
-        padding-left: 13px;
-        padding-top: 5px;
-        border: black solid 1px;
-        border-bottom: none;
-    }
-    form {
-        background-color: white;
-        border: black solid 1px;
-        padding-left: 13px;
-        padding-top: 5px;
-        input {
-            margin-bottom: 5px;
-            margin-top: 5px;
-        }
+        padding-left: 60px;
     }
 }
 
@@ -162,7 +198,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-right: 10%;
     p {
         font-size: 14pt;
     }

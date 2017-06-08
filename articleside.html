@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Artikel</title>
+</head>
+
+<body>
+    <!-- Wrapper til indholdet  -->
+    <div class="wrapper">
+        <!-- Header med billede -->
+        <header><img src="IMG/header_image.png" alt=""></header>
+        <!-- Menuen -->
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.php">Forside</a></li>
+                    <li><a href="">Log ind</a></li>
+                    <li><a href="">Kontakt</a></li>
+                    <li><a href="">Om os</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main med article og log ind -->
+        <!-- Post class hvor articlerne befinder sig i -->
+        <main>
+            <div class="post">
+                <!-- Felter til der hvor man skal indtaste oplysninger om sin Artikel -->
+                <article class="form">
+                    <form action="insert.php" method="get">
+                        <div class="form-group">
+                            <label for="heading">Artiklens overskrift her:</label>
+                            <br>
+                            <input id="heading" type="text" name="heading" placeholder="Overskrift her..."> </div>
+                        <div class="form-group">
+                            <label for="imgSrc">Billedenavn:</label>
+                            <br>
+                            <input id="imgSrc" type="text" name="imgSrc" placeholder="Sti til billedet uden .png"> </div>
+                        <div class="form-group">
+                            <label for="imgAlt">Beskrivelse af dit billede:</label>
+                            <br>
+                            <input id="imgAlt" type="text" name="imgAlt" placeholder="Tekst der beskriver dit billede"> </div>
+                        <div class="form-group">
+                            <label for="articleText" name="articleText" placeholder="Tekst">Artiklens tekst her:</label>
+                            <br>
+                            <input id="articleText" type="text" name="articleText" placeholder="Tekst her..."> </div>
+                        <input type="submit" value="Indsæt ny artikel"> </form>
+                </article>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
