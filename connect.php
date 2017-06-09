@@ -1,7 +1,7 @@
 <?php 
 
 /*Her er de oplysinger der skal til for at der forbindelse til databasen*/
-/*Oplysningerne er pakket ind i variabler*/
+/*Oplysningerne er pakket ind i hver deres variabler*/
 $host = "localhost";
 $dbName = "grimmdb";
 $dbUsername = "root";

@@ -122,26 +122,35 @@ main {
     background-color: white;
     text-align: center;
     height: 760px;
-    max-width: 100%; }
-  /* line 136, C:/xampp/htdocs/CMS/CSS/style.scss */
+    max-width: 100%;
+    border-bottom: 5px goldenrod solid; }
+  /* line 137, C:/xampp/htdocs/CMS/CSS/style.scss */
   .post img {
     width: 833px;
     max-width: 100%;
     height: 500px;
     padding-top: 20px; }
-  /* line 142, C:/xampp/htdocs/CMS/CSS/style.scss */
+  /* line 143, C:/xampp/htdocs/CMS/CSS/style.scss */
   .post h2 {
     float: left;
     position: absolute;
     padding-left: 9.3%; }
-  /* line 147, C:/xampp/htdocs/CMS/CSS/style.scss */
+  /* line 148, C:/xampp/htdocs/CMS/CSS/style.scss */
   .post p {
     width: 700px; }
   /* line 151, C:/xampp/htdocs/CMS/CSS/style.scss */
+  .post .afsender {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    /* line 155, C:/xampp/htdocs/CMS/CSS/style.scss */
+    .post .afsender blockquote {
+      font-weight: bold; }
+  /* line 160, C:/xampp/htdocs/CMS/CSS/style.scss */
   .post .form {
     height: 50px;
     text-align: inherit; }
-    /* line 154, C:/xampp/htdocs/CMS/CSS/style.scss */
+    /* line 163, C:/xampp/htdocs/CMS/CSS/style.scss */
     .post .form form {
       display: flex;
       flex-wrap: wrap;
@@ -149,24 +158,24 @@ main {
       align-items: center;
       background-color: white;
       height: 400px; }
-    /* line 162, C:/xampp/htdocs/CMS/CSS/style.scss */
+    /* line 171, C:/xampp/htdocs/CMS/CSS/style.scss */
     .post .form .form-group {
       padding: 20px; }
-      /* line 164, C:/xampp/htdocs/CMS/CSS/style.scss */
+      /* line 173, C:/xampp/htdocs/CMS/CSS/style.scss */
       .post .form .form-group label {
         font-weight: bold; }
-      /* line 167, C:/xampp/htdocs/CMS/CSS/style.scss */
+      /* line 176, C:/xampp/htdocs/CMS/CSS/style.scss */
       .post .form .form-group input {
         width: 184px; }
 
 /*Dato der viser hvornår billedet er uploadet*/
-/* line 177, C:/xampp/htdocs/CMS/CSS/style.scss */
+/* line 186, C:/xampp/htdocs/CMS/CSS/style.scss */
 .time {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 5px; }
-  /* line 182, C:/xampp/htdocs/CMS/CSS/style.scss */
+  /* line 191, C:/xampp/htdocs/CMS/CSS/style.scss */
   .time p {
     text-align: center;
     padding-top: 10px;
@@ -178,12 +187,12 @@ main {
     padding-left: 60px; }
 
 /*Min Footer*/
-/* line 197, C:/xampp/htdocs/CMS/CSS/style.scss */
+/* line 206, C:/xampp/htdocs/CMS/CSS/style.scss */
 footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  /* line 201, C:/xampp/htdocs/CMS/CSS/style.scss */
+  /* line 210, C:/xampp/htdocs/CMS/CSS/style.scss */
   footer p {
     font-size: 14pt; }
 

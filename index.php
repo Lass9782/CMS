@@ -26,35 +26,55 @@
             </div>
             <!-- Main med article og log ind -->
             <main>
-                <a href="articleside.html">
-                    <input type="button" value="Lav en ny artikel"> </a>
-                <section>
-                    <!-- Min aside med log ind -->
-                    <aside>
-                        <h2>Log ind</h2>
-                        <form action="checkUser.php" method="post">
-                            <label for="user">Brugernavn:</label>
-                            <br>
-                            <input type="text" id="user" placeholder="Brugernavn" name="formUsername">
-                            <br>
-                            <label for="pass">Password:</label>
-                            <br>
-                            <input type="text" id="pass" placeholder="Password" name="formPassword">
-                            <br>
-                            <br>
-                            <input type="submit" value="Log ind"> </form>
-                    </aside>
-                </section>
-                <!-- Post class hvor articlerne befinder sig i -->
-                <div class="post">
-                    <article class="form"> </article>
-                    <!-- Her inkludere jeg den php fil som indholder alt hvad der har med selve artiklens udsende at gøre -->
-                    <?php include "fetchDb.php";?>
-                </div>
+                <?php 
+                if(isset($_SESSION['username'])&& !empty($_SESSION['username'])){?>
+                    <a href="articleside.html">
+                        <input type="button" value="Lav en ny artikel"> </a>
+                    <?php    
+                }
+                ?>
+                        <?php 
+                    if(isset($_SESSION ['username']) && !empty($_SESSION['username'])){ ?>
+                            <section>
+                                <!-- Min aside med log ind hvis brugeren er logget ind -->
+                                <aside>
+                                    <h2>Velkommen:</h2>
+                                    <form>
+                                        <h4>
+                            <?php echo $_SESSION['username']; ?>
+                            </h4> <a href="logout.php?logout=true">Log ud</a> </form>
+                                </aside>
+                            </section>
+                            <?php        
+                    } else{
+                    ?>
+                                <section>
+                                    <!-- Min aside med log ind hvis brugeren ikke er logget ind -->
+                                    <aside>
+                                        <h2>Log ind</h2>
+                                        <form action="checkUser.php" method="post">
+                                            <label for="user">Brugernavn:</label>
+                                            <br>
+                                            <input type="text" id="user" placeholder="Brugernavn" name="formUsername">
+                                            <br>
+                                            <label for="pass">Password:</label>
+                                            <br>
+                                            <input type="text" id="pass" placeholder="Password" name="formPassword">
+                                            <br>
+                                            <br>
+                                            <input type="submit" value="Log ind"> </form>
+                                    </aside>
+                                </section>
+                                <?php } ?>
+                                    <!-- Post class hvor articlerne befinder sig i -->
+                                    <div class="post">
+                                        <!-- Her inkludere jeg den php fil som indholder alt hvad der har med selve artiklens udsende at gøre -->
+                                        <?php include "fetchDb.php";?>
+                                    </div>
             </main>
             <!-- Footer med en beskrivelse om hvem der har lagt billedet op -->
             <footer>
-                <p>Dette billede er lagt op af Lasse Vangsgaard </p>
+                <p>Denne hjemmeside er lavet af Lasse Vangsgaard </p>
             </footer>
         </div>
     </body>

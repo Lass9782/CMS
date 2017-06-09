@@ -22,6 +22,12 @@ while ($row = $statement->fetch(PDO::FETCH_ASSOC)){ ?>
         <p>
             <?php echo $row['articleText'] ?>
         </p>
+        <br>
+        <div class="afsender">
+            <blockquote> Lavet af:
+                <?php echo $row['username'] ?>
+            </blockquote>
+        </div>
     </article>
     <?php
 }
